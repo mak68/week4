@@ -31,6 +31,7 @@ foreach ($explode as $i) {
 
 echo '<br> The number of words in $date is: ' . str_word_count ($date);
 
+echo '<br>' .strlen ($date);
 
 
 
