@@ -19,6 +19,18 @@ echo "the past";
 } else if ($date==$tar) {
 echo "Oops";
 }
+echo '<br>';
+$find= strpos($date, '/' !==false);
+echo $date;
+
+echo '<br>';
+$explode= explode('/', $date);
+foreach ($explode as $i) {
+	echo $i . " ";
+	}
+
+
+
 
 
 ?>
