@@ -35,6 +35,13 @@ echo '<br>' .strlen ($date);
 
 echo '<br>'. ord($date);
 
+echo '<br>'. substr($date, 8);
+
+echo '<br>';
+$explode= explode ('/', $date);
+foreach ($explode as $i) {
+	echo $i . " ";
+	}
 
 
 ?>
