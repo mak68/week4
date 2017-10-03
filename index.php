@@ -33,6 +33,7 @@ echo '<br> The number of words in $date is: ' . str_word_count ($date);
 
 echo '<br>' .strlen ($date);
 
+echo '<br>'. ord($date);
 
 
 
