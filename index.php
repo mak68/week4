@@ -12,30 +12,35 @@ print_r($year);
 
 echo '<br>';
 
-if ($date > $tar) {
-echo "the future";
-} else if ($date < $tar) {
-echo "the past";
-} else if ($date==$tar) {
-echo "Oops";
+echo "Compare date and tar: "; 
+
+if ($date < $tar) {
+	echo "the future";
+} else if ($date >  $tar) {
+	echo "the past";
+} else  {
+	echo "Oops";
 }
+
 echo '<br>';
+echo "search for / in \$date: "; 
 $find= strpos($date, '/' !==false);
 echo $date;
 
 echo '<br>';
+echo "delimit postions with space";
 $explode= explode('/', $date);
 foreach ($explode as $i) {
 	echo $i . " ";
 	}
 
-echo '<br> The number of words in $date is: ' . str_word_count ($date);
+echo '<br> The number of words in $date is: ' . str_word_count ($date) . "<br>";
 
-echo '<br>' .strlen ($date);
+echo "The lenght of \$date is: "  .strlen ($date) . "<br>";
 
-echo '<br>'. ord($date);
+echo "The ASCII value of first character is: " . ord($date) . "<br>";
 
-echo '<br>'. substr($date, 8);
+echo "The last two characters are: " . substr($date, 8). "<br>";
 
 echo '<br>';
 $explode= explode ('/', $date);
@@ -43,5 +48,15 @@ foreach ($explode as $i) {
 	echo $i . " ";
 	}
 
+echo "<br>";
 
+echo "Values in \$year that are leap years: ";
+   foreach ($year as $value) {
+	if (((int) $value % 4 == O && (int)$value % 100 !=0) || ((int)$value
+	%400 == 0)) {
+		echo "true\n";
+	} else {
+		echo "false\n";
+		}
+}
 ?>
